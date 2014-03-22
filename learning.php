@@ -14,11 +14,7 @@
             <div class="columnThree">
                 <a href="Tutorials/htaccess">.htaccess</a>
             </div>            
-            
-			
-			<jjj>
-			
-        </div>
+       </div>
             <!-- /main -->
         </div>
     </div>
