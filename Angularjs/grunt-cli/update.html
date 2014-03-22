@@ -1,0 +1,58 @@
+<!Doctype>
+<html data-ng-app="updateApp">
+
+<head>
+    <title>this an ngulat app</title>
+</head>
+
+<body>
+
+<a href="#/controllerone">Controller One</a>||<a href="#/controllerTwo">Controller Two</a>||<a href="#/controllerThree">Controller Three</a>
+
+
+
+<div>
+    <div ng-view=""></div>
+</div>
+
+
+
+<h4>Another Practice</h4>
+
+<input type="range" min="1"  max="100" value="0" >
+<input type="date" min="1"  max="10" value="12-04-2014">
+
+ <div >
+<form  data-ng-controller="updateController">
+    <table>
+        <thead>
+            <th>TeamName</th><th>Wins</th>
+        </thead>
+    <tr ng-repeat="team in teams"><td><input type="text" ng-model="team.teamName"></td>
+    <td><input type="text" ng-model="team.w" ></td></tr>
+    </table>
+    <input type="submit" value="Save new values" ng-click="save()">
+  </form>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+        <script src="Scripts/angular.min.js" /></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+         <script src="app/controller/controller.js"></script>
+          <script src="app/controller/ngviews.js"></script>
+
+</body>
+
+</html>

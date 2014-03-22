@@ -1,0 +1,18 @@
+   <div data-ng-controller="simpleControoller">
+       <h2>First Controller</h2>
+       
+       <ul>
+           <li data-ng-repeat="name in technologies">
+               {{name.name}}//
+               {{name.years}}//
+               {{name.lastuse}}//
+              <ol>
+                <li data-ng-repeat="name in tecs">
+                  {{name.tecs}}
+                </li>
+
+              </ol>
+           </li>
+       </ul>
+
+   </div>

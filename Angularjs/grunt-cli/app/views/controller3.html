@@ -1,0 +1,29 @@
+   <div data-ng-controller="friendDetails">
+       <h2>Second Controller</h2>
+      <input type="text" data-ng-model="name.search"  placeholder="search name"> 
+       <ul>
+           <li data-ng-repeat="name in friendDetails| filter: name.search ">
+               {{name.name | uppercase}}//
+               {{name.age}}//
+               {{name.gender}}
+           </li>
+       </ul>
+
+   </div>
+
+
+      <div data-ng-controller="friendsName">
+       <h2>Third Controller</h2>
+    <input type="text" data-ng-model="det.search"  placeholder="search name"> 
+       <ul>
+           <li data-ng-repeat="name in ourDetails| filter: det.search ">
+               {{name.name | uppercase}}//
+               {{name.age}}//
+               {{name.city}}
+           </li>
+       </ul>
+
+
+      
+
+   </div>

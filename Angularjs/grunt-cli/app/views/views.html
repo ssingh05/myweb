@@ -1,0 +1,44 @@
+
+   <div data-ng-controller="simpleControoller">
+   <h2>Example of Routs</h2>
+     Name:  </br>
+      <input type="text" data-ng-model="place.newName"  placeholder="name"> {{place.newName}}</br>
+        year:  </br>
+           <input type="text" data-ng-model="place.newYear"  placeholder=" name"></br>
+          lastuse:  </br>
+             <input type="text" data-ng-model="place.newlast"  placeholder=" name"></br>
+
+           <button data-ng-click="addNewdetails()">Inser new values</button>  
+       <ul>
+           <li data-ng-repeat="details in technologies| filter: det.search ">
+               {{details.name | uppercase}}//
+               {{details.years}}//
+               {{details.lastuse}}
+           </li>
+       </ul>
+  </div>
+
+<div data-ng-controller="jsonController">
+	<h2>JSON Con</h2>
+       <ul>
+           <li data-ng-repeat="name in techno">
+               {{name.name}}//
+               {{name.years}}//
+               {{name.lastuse}}//
+               {{name.tecs}}
+              <ol>
+                <li data-ng-repeat="tecs in techno2">
+                  {{tecs.language}}
+                </li>
+
+              </ol>
+           </li>
+       </ul>
+
+
+</div>
+
+
+
+
+ 

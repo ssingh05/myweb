@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+ <head>
+   <title>TODO supply a title</title>
+       <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+                <script src="../scripts/lib/oopJs.js" type="text/javascript"></script>
+                <
+                </head>
+                <body>
+                    <h1>Example!</h1>
+<pre>
+   <code>
+// two way to declare function here 
+// Type one
+
+var tOneForCount = function(rows, columns, total) {
+    this.rows = rows;
+    this.columns = columns;
+    this.numeber = total;
+    this.getCelloCount = function() {
+        return  this.columns + this.rows + this.numeber;
+    }
+}
+
+// type two
+
+function tTwoForCount(rows, columns){
+    this.rows = rows;
+    this.column = columns;
+    this.getCount = function(){
+        return this.rows *this.column; 
+    }
+}
+
+// for function one
+var tables = new tOneForCount(10, 152, 10);
+var cellnumber = tables.getCelloCount();
+
+// for functiuon two
+
+var t = new tTwoForCount(5,10);
+var count = t.getCount(); 
+
+// output 
+document.write("</br>" + "This is a first output" + cellnumber);
+document.write("</br>" + "This is a second output" + count);
+
+</code>
+</pre>
+<h4>Referencing External Functions</h4>
+<pre><code>
+ var tOneForCount = function(rows, columns, total) {
+    this.rows = rows;
+    this.columns = columns;
+    this.number = total;
+    this.getCelloCount =  getCellCount;
+}
+
+function getCellCount(){
+    return this.rows + this.columns + this.number; 
+}
+
+var t = new tOneForCount(5,10, 115);
+var count = t.getCelloCount(); 
+
+// output 
+document.write("</br>" + "This is a first output" + count);                      
+</code></pre>
+
+<h4>Referencing External Functions</h4>
+<pre><code>
+
+                        
+</code></pre>
+
+
+
+              <div id="previewpannels">
+                    <ul id="zoomimagesets">
+                        <li><a src= "#" id="zoomin" alt="page1">Zoom In</a></li>
+                        <li><a src="#" id="zoomout" alt="page1">Zoom Out</a></li>
+                        <li><a src= "#" id="zoomreset" alt="page1">Reset</a></li>
+                    </ul>
+                    <div id="imagepreview">
+                        <img src= "#" id="currentpreviewimage" alt="page1"/>
+                        <a href="#"  onclick="imageGallery.Next();" >Next Image</a>
+                    </div>
+                </div>
+
+                <div id="previewlistpanel">
+                    <ul id="previewlist">
+                        <li><a href="#"  onclick="" >Pre</a></li>
+                        <li><a href="#"  onclick="imageGallery.Next();" >Next Image</a></li>
+                        <li>Image 3</li>
+                        <li>Image 4</li>
+                    </ul>
+                </div>
+
+
+
+
+
+
+
+
+                    
+</body>
+</html>

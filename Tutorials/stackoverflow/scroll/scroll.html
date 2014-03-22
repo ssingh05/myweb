@@ -1,0 +1,71 @@
+<!Doctype>
+<html data-ng-app="app">
+
+<head>
+    <title>Stackoverflow</title>
+	
+	<script src="../../../scripts/jquery-1.9.1.js"></script>
+	<script>
+	$(document).ready(function(){
+		var div = $('#wrap'),
+		wrapScreenHeight = div.height(),
+		wrapHeight = div.outerHeight(),
+		posY=div.position().top, //<== get the position of the div relative to the document
+		listHeight = div.find('ul').outerHeight();
+
+	div.on('mouseover', function(e) {
+    var cPointY = e.pageY-posY, //<== the position of the cursor relative to the div, not the document
+        dP = ((cPointY / wrapHeight));
+    div.scrollTop((listHeight * dP) - wrapScreenHeight);  
+});
+
+}); 
+		
+	</script>
+	
+	
+</head>
+
+<body>
+
+
+<div id="wrap" style="margin: 0px auto; text-align: center; background-color: wheat; height: 200px; overflow: hidden;">
+    <ul> 
+        <li>list item 0</li>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+        <li>list item 7</li>
+        <li>list item 8</li>
+        <li>list item 9</li>
+        <li>list item 10</li>
+        <li>list item 11</li>
+        <li>list item 12</li>
+        <li>list item 13</li>
+        <li>list item 14</li>
+        <li>list item 15</li>
+        <li>list item 16</li>
+        <li>list item 17</li>
+        <li>list item 18</li>
+        <li>list item 19</li>
+        <li>list item 20</li>
+        <li>list item 21</li>
+        <li>list item 22</li>
+        <li>list item 23</li>
+        <li>list item 24</li>
+        <li>list item 25</li>
+        <li>list item 26</li>
+        <li>list item 27</li>
+        <li>list item 28</li>
+        <li>list item 29</li>
+    </ul>
+</div>
+
+
+
+</body>
+
+</html>

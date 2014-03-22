@@ -1,0 +1,66 @@
+
+.carousel .carousel_indicator {
+    padding-top: 5px;
+    text-align: center; }
+.carousel .carousel_indicator span {
+    margin: 0 2px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #888;
+    text-indent: -1000em; }
+.carousel .carousel_indicator span.active {
+    background: #000; }
+.carousel .btns {
+    padding-top: 5px;
+    text-align: center; }
+
+
+.carousel {
+    height: 343px;
+    width: 695px;
+}
+
+
+.carousel .carousel_indicator {
+    padding-top: 5px;
+    text-align: center; }
+
+.carousel .carousel_indicator span {
+    margin: 0 2px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #888;
+    text-indent: -1000em; }
+
+    #carousel_10 {
+        margin: 0 auto;
+        width: 615px;
+        
+        overflow: hidden; 
+    }
+
+    #carousel_10 .carousel_box {
+        width: 615px;
+        height: 313px;
+        color: #fff;
+        background: #252525;
+        line-height: 140px;
+        text-align: center;
+        font-size: 123%; }
+
+    #carousel_10 .carousel_box.second {
+        background: #666; }
+
+    #carousel_10 .carousel_box.third {
+        background: #999; }
+
+
+
+    .carousel_box second{
+        background: url(../images/carousel/slider3.png);
+    }
+

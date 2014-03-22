@@ -1,0 +1,33 @@
+{
+
+    "technologies": [{
+            "name": "Sureandr Singhi",
+            "years": "20",
+            "lastuse": "today",
+            "tecs": [{
+                "language": "HTML",
+                "experiance": "2 years"
+            }]
+        }, 
+        {
+            "name": "Singh",
+            "years": "20",
+            "lastuse": "today",
+            "tecs": [{
+                "language": "HTML",
+                "experiance": "2 years"
+            }]
+        },
+
+        {
+
+            "name": "Sureandr Singh",
+            "years": "20",
+            "lastuse": "today",
+            "tecs": [{
+                "language": "HTML",
+                "experiance": "2 years"
+            }]
+        }
+    ]
+}
